@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.image {
+    width: 75%;
+    background-size: cover;
+}
+
+.bg-container {
+    min-height: 100vh;
+}
+
+.number {
+    color: #323f4b;
+    background-color: #cbd2d9;
+    font-size: 30px;
+    font-weight: bold;
+    border: 8px solid #e4e7eb;
+    border-radius: 12px;
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+.operator {
+    color: #c4c4c4;
+    font-size: 40px;
+}
+
+.user-input {
+    text-align: center;
+    color: #323f4b;
+    background-color: #cbd2d9;
+    font-size: 30px;
+    font-weight: bold;
+    width: 150px;
+    height: 75px;
+    border: 8px solid #e4e7eb;
+    border-radius: 12px;
+    margin: 20px;
+}
+
+.game-result {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 12px 24px;
+    border-radius: 12px;
+    margin-top: 16px;
+    display: inline-block;
+    opacity: 0;
+}
+
+.bounce {
+    animation: bounceIn 0.5s ease;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.7);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
