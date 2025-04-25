@@ -1,0 +1,28 @@
+const wordCloud = ["Hello", "Hi", "How", "What", "You", "Yourself", "Name", "Victory", "Food", "Lovely", "Beautiful", "Written", "Where", "Who", "Awesome"];
+const wordsContainerEl = document.getElementById("wordsContainer");
+const addBtnEl = document.getElementById("addBtn");
+const errorMsgEl = document.getElementById("errorMsg");
+const userInputEl = document.getElementById("userInput");
+
+const createAndAddWord = (word) => {
+  const span = document.createElement("span");
+  span.textContent = word;
+  span.style.fontSize = `${Math.floor(Math.random() * 30 + 15)}px`;
+  span.classList.add("m-2");
+  wordsContainerEl.appendChild(span);
+};
+
+wordCloud.forEach(createAndAddWord);
+
+addBtnEl.addEventListener("click", () => {
+  const newWord = userInputEl.value.trim();
+
+  if (!newWord) {
+    errorMsgEl.textContent = "Please enter a word";
+    return;
+  }
+
+  createAndAddWord(newWord);
+  errorMsgEl.textContent = "";
+  userInputEl.value = "";
+});
