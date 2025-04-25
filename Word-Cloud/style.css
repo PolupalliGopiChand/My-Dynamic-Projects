@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f7fa;
+}
+
+.word-cloud-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+
+#wordsContainer span {
+  display: inline-block;
+  color: #3b3f5c;
+  transition: transform 0.3s;
+}
+
+#wordsContainer span:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.user-input {
+  width: 60%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.add-btn {
+  color: white;
+  background-color: #4a5568;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.add-btn:hover {
+  background-color: #2d3748;
+}
+
+.error-msg {
+  color: #e53e3e;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
