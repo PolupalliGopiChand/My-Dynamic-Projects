@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.bg-container {
+  background: linear-gradient(to bottom right, #189ffd, #29f39c);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.peace-page-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.peace-page-heading {
+  color: #323f4b;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.peace-page-description {
+  color: #616e7c;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.heading {
+  color: #323f4b;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.buttons-list-container {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.button {
+  font-size: 16px;
+  background-color: #05a8f2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0386c3;
+}
+
+#timerText {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2f3e46;
+  min-height: 30px;
+}
