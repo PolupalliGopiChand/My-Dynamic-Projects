@@ -85,4 +85,8 @@ button {
     .form-group{
         width: 55vw;
     }
+    
+    .error-msg{
+      font-size: 2vw;
+    }
 }
