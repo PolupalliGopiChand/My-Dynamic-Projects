@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.bg-container {
+    background-image: linear-gradient(to right, #49c4ee, #6e87d6);
+    height: 100vh;
+    color: #fff;
+}
+
+.joke-image {
+    width: 150px;
+    max-width: 100%;
+}
+
+.joke-container{
+    height: 40vh;
+}
+
+.joke-text {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.joke-button {
+    font-size: 20px;
+    padding: 10px 20px;
+    color: #6c8bd8;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.joke-button:hover {
+    background-color: #e2e6ea;
+    cursor: pointer;
+    border: 1px solid white;
+    box-shadow: 0px 5px 10px gray;
+}
+
+@media only screen and (min-width: 576px) {
+    .joke-container{
+        height: 20vh;
+        width: 75vw;
+    }
+}
