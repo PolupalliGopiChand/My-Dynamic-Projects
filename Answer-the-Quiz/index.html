@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="bg-container text-center p-4">
+        <h1>Answer the Questions</h1>
+        <div class="card p-3">
+            <form id="questionsForm">
+                <div class="question">
+                    <h3>What is the Capital of India?</h3>
+                    <div class="options">
+                        <input type="radio" name="mcq1" id="cityHyderabad" value="hyderabad">
+                        <label for="cityHyderabad">Hyderabad</label><br>
+                        <input type="radio" name="mcq1" id="cityChennai" value="chennai">
+                        <label for="cityChennai">Chennai</label><br>
+                        <input type="radio" name="mcq1" id="cityDelhi" value="delhi">
+                        <label for="cityDelhi">Delhi</label><br>
+                        <input type="radio" name="mcq1" id="cityMumbai" value="mumbai">
+                        <label for="cityMumbai">Mumbai</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>Which is the largest ocean on Earth?</h3>
+                    <div class="options">
+                        <input type="radio" name="mcq2" id="oceanAtlantic" value="atlantic">
+                        <label for="oceanAtlantic">Atlantic Ocean</label><br>
+                        <input type="radio" name="mcq2" id="oceanPacific" value="pacific">
+                        <label for="oceanPacific">Pacific Ocean</label><br>
+                        <input type="radio" name="mcq2" id="oceanIndian" value="indian">
+                        <label for="oceanIndian">Indian Ocean</label><br>
+                        <input type="radio" name="mcq2" id="oceanArctic" value="arctic">
+                        <label for="oceanArctic">Arctic Ocean</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>What is the square root of 64?</h3>
+                    <div class="options">
+                        <input type="radio" name="mcq3" id="sqrt8" value="8">
+                        <label for="sqrt8">8</label><br>
+                        <input type="radio" name="mcq3" id="sqrt16" value="16">
+                        <label for="sqrt16">16</label><br>
+                        <input type="radio" name="mcq3" id="sqrt32" value="32">
+                        <label for="sqrt32">32</label><br>
+                        <input type="radio" name="mcq3" id="sqrt4" value="4">
+                        <label for="sqrt4">4</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>Who developed the theory of relativity?</h3>
+                    <div class="options">
+                        <input type="radio" name="mcq4" id="einstein" value="einstein">
+                        <label for="einstein">Albert Einstein</label><br>
+                        <input type="radio" name="mcq4" id="newton" value="newton">
+                        <label for="newton">Isaac Newton</label><br>
+                        <input type="radio" name="mcq4" id="tesla" value="tesla">
+                        <label for="tesla">Nikola Tesla</label><br>
+                        <input type="radio" name="mcq4" id="hawking" value="hawking">
+                        <label for="hawking">Stephen Hawking</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>Which planet is known as the Red Planet?</h3>
+                    <div class="options">
+                        <input type="radio" name="mcq5" id="planetEarth" value="earth">
+                        <label for="planetEarth">Earth</label><br>
+                        <input type="radio" name="mcq5" id="planetMars" value="mars">
+                        <label for="planetMars">Mars</label><br>
+                        <input type="radio" name="mcq5" id="planetVenus" value="venus">
+                        <label for="planetVenus">Venus</label><br>
+                        <input type="radio" name="mcq5" id="planetJupiter" value="jupiter">
+                        <label for="planetJupiter">Jupiter</label>
+                    </div>
+                </div>
+
+                <button id="submitBtn" class="btn btn-primary">Submit</button>
+                <p id="resultMsg" class="pt-3"></p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
