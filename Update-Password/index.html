@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="bg-container d-flex flex-column justify-content-center align-items-center min-vh-100">
+    <div class="card shadow p-4 w-100" style="max-width: 400px;">
+      <h2 class="text-center mb-4">Update Password</h2>
+      <form id="updatePasswordForm" novalidate>
+        <div class="form-group">
+          <label for="newPassword">New Password</label>
+          <input type="password" class="form-control" id="newPassword" required />
+          <small id="newPasswordErrMsg" class="error-msg form-text"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" class="form-control" id="confirmPassword" required />
+          <small id="confirmPasswordErrMsg" class="error-msg form-text"></small>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Update</button>
+      </form>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast position-fixed bottom-0 right-0 m-3" id="successToast" data-delay="3000" style="z-index: 9999;">
+      <div class="toast-header bg-success text-white">
+        <strong class="mr-auto">Success</strong>
+        <button type="button" class="ml-2 mb-1 close text-white" data-dismiss="toast">&times;</button>
+      </div>
+      <div class="toast-body">
+        Password updated successfully!
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
