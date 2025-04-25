@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.bg-container {
+  background-image: url('https://assets.ccbp.in/frontend/dynamic-webapps/time-converter-bg.png');
+  min-height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group{
+    width: 75vw;
+}
+
+h1 {
+  font-size: 10vw;
+  font-weight: bold;
+  color: white;
+}
+
+p {
+  color: white;
+  font-size: 2vw;
+}
+
+span{
+    color: red;
+    font-size: 4vw;
+}
+
+label {
+  color: #f5f7fa;
+  font-size: 3vw;
+}
+
+input {
+  border-radius: 10px;
+  height: 5vh;
+  font-size: 4vw;
+}
+
+button {
+  border-radius: 1vw;
+  font-size: 5vw;
+}
+
+.result-container{
+    height: 10vh;
+}
+
+.ans {
+  color: white;
+  font-size: 5vw;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  border-radius: 12px;
+  margin-top: 15px;
+  display: none;
+}
+
+.error-msg{
+  font-size: 3vw;
+  text-align: center;
+  text-decoration: underline overline;
+}
+
+@media only screen and (min-width: 1100px) {
+    .bg-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .form-group{
+        width: 55vw;
+    }
+}
