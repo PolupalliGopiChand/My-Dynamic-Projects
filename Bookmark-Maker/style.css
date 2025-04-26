@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8fafc;
+}
+
+.card {
+    border-radius: 15px;
+}
+
+span {
+    font-size: 36px;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.favicon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+#clearAllBtn:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+#exportBtn:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+
+@media only screen and (min-width: 992px) {
+  .card {
+    height: 500px;
+  }
+}
