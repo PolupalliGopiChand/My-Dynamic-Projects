@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bree Serif', serif;
+    height: 100%;
+}
+
+.bg-container {
+    background-image: radial-gradient(white, gray);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.heading {
+    color: #000;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.subheading {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.timer-container {
+    margin-top: 10px;
+}
+
+.clock-img {
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+}
+
+.timer {
+    font-size: 48px;
+    font-weight: bold;
+    color: #d00000;
+}
+
+.countdown-timer {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff0054;
+    margin-bottom: 20px;
+}
+
+.custom-card {
+    background-color: gray;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    width: 90%;
+    margin: auto;
+}
+
+.quote-display {
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+textarea {
+    font-size: 18px;
+}
+
+.result-text {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.button-group {
+    margin-top: 20px;
+}
+
+.dark-mode {
+    background-image: radial-gradient(black, gray);
+    color: #ffffff;
+}
+
+.dark-mode .custom-card {
+    background-color: gray;
+    border-color: #555;
+}
+
+.dark-mode .heading {
+    color: #fff;
+}
+
+.dark-mode .subheading {
+    color: #fff;
+}
+
+.correct-char {
+    color: green;
+    font-weight: bold;
+}
+
+.wrong-char {
+    color: red;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 992px) {
+    .custom-card {
+        width: 60%;
+    }
+}
